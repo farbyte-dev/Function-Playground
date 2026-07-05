@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Function Playground</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>⚡ Function Playground</h2>
+
+<div class="box">
+  <h3>Input Array (comma separated)</h3>
+  <input id="input" placeholder="e.g. 1,2,3,4,5">
+</div>
+
+<div class="box">
+  <h3>Operations</h3>
+  <button onclick="runMap()">Map x2</button>
+  <button onclick="runFilter()">Filter > 2</button>
+  <button onclick="runReduce()">Sum</button>
+</div>
+
+<div class="box">
+  <h3>Recursion Visualizer (Factorial)</h3>
+  <input id="recInput" placeholder="Enter number e.g. 5">
+  <button onclick="runRecursion()">Run Recursion</button>
+</div>
+
+<div class="box">
+  <h3>Output</h3>
+  <pre id="output"></pre>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
