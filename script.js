@@ -1,4 +1,3 @@
-    // ===== UTILITY =====
   function getArray() {
     return document.getElementById("input").value
       .split(",")
@@ -9,7 +8,6 @@
     document.getElementById("output").textContent = data;
   }
 
-  // ===== MAP CLONE (HOF + CALLBACK) =====
   function myMap(arr, callback) {
     let result = [];
 
@@ -30,7 +28,6 @@
     print("Map Result:\n" + JSON.stringify(result));
   }
 
-  // ===== FILTER CLONE =====
   function myFilter(arr, callback) {
     let result = [];
 
@@ -53,7 +50,6 @@
     print("Filter Result:\n" + JSON.stringify(result));
   }
 
-  // ===== REDUCE CLONE =====
   function myReduce(arr, callback, initial) {
     let accumulator = initial;
 
@@ -74,7 +70,6 @@
     print("Reduce Result (Sum):\n" + result);
   }
 
-  // ===== RECURSION VISUALIZER =====
   function factorial(n, depth = 0) {
     let indent = " ".repeat(depth * 2);
     log += indent + "factorial(" + n + ")\n";
